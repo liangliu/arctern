@@ -20,7 +20,7 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import col
 
 # import random
-# import sys
+import sys
 
 base_dir = './data/'
 
@@ -1028,7 +1028,7 @@ def run_test_st_geomfromgeojson(spark):
 	rs = spark.sql(sql).cache()
 	rs.printSchema()
 	rs.show()
-	save_result("results/%s" % table_name, rs)
+	# save_result("results/%s" % table_name, rs)
 
 
 def run_test_st_geomfromgeojson2(spark):
@@ -1177,14 +1177,14 @@ def run_test_st_astext(spark):
 
 
 if __name__ == "__main__":
-	url = 'local'
-	spark_session = SparkSession.builder.appName("Python zgis sample").master(url).getOrCreate()
-	spark_session.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
+    url = 'local'
+    spark_session = SparkSession.builder.appName("Python zgis sample").master(url).getOrCreate()
+    spark_session.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
 
-	clear_result_dir('/tmp/results')
-	register_funcs(spark_session)
-    
-    for _ in range(sys.argv[1]):
+    clear_result_dir('/tmp/results')
+    register_funcs(spark_session)
+
+    for _ in range(int(sys.argv[1])):
         run_test_st_geomfromgeojson(spark_session)
 
     # run_test_st_geomfromgeojson(spark_session)
@@ -1256,5 +1256,5 @@ if __name__ == "__main__":
 	# run_test_st_geomfromwkt(spark_session)
 	# run_test_st_astext(spark_session)
 
-	spark_session.stop()
+    spark_session.stop()
 
