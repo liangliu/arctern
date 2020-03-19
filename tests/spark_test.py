@@ -11,17 +11,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-import shutil
-import os
-import json
-from pyspark.sql import SparkSession
-from arctern_pyspark import register_funcs
-from pyspark.sql.types import *
-from pyspark.sql.functions import col
 
 # import random
 import sys
 import time
+import shutil
+import os
+import json
+import logging
+from pyspark.sql import SparkSession
+from arctern_pyspark import register_funcs
+from pyspark.sql.types import *
+from pyspark.sql.functions import col
 
 
 base_dir = './data/'
@@ -46,8 +47,21 @@ def read_data(spark, base_dir, data):
         # return spark.read.csv(get_data(base_dir, data)).cache()
         return spark.read.format('csv').options(header='true', sep='|').load(get_data(base_dir, data)).cache()
 
+def execute_sql(spark, sql):
+    ms = time.time_ns()
+    logging.getLogger().info(str(ms))
 
-def to_txt(file_dir, df):
+    rs = spark.sql(sql)
+
+    me = time.time_ns()
+    logging.getLogger().info(str(me))
+
+    execution_time = str((me - ms) / (1000 * 1000))
+    logging.getLogger().info('execution time: %s ms' % execution_time)
+
+    return rs, execution_time
+
+def to_txt(file_dir, df): 
     df.write.text(file_dir)
 
 
@@ -79,13 +93,13 @@ def run_test_st_point(spark):
     df.show()
     df.createOrReplaceTempView(table_name)
 
-    rs = spark.sql(sql).cache()
-    rs.printSchema()
-    rs.show()
-    save_result("results/%s" % table_name, rs)
+    execute_sql(spark, sql)
+
+    # rs, execute_time = execute_sql(spark, sql)
+    # save_result("results/%s" % table_name, rs)
 
 
-def run_test_envelope_aggr_1(spark):	
+def run_test_envelope_aggr_1(spark):
     data = "envelope_aggr.csv"
     table_name = 'test_envelope_aggr_1'
     sql = "select st_envelope_aggr(geos) as my_envelope from test_envelope_aggr_1"
@@ -100,7 +114,7 @@ def run_test_envelope_aggr_1(spark):
     save_result("results/%s" % table_name, rs)
 
 
-def run_test_envelope_aggr_curve(spark):	
+def run_test_envelope_aggr_curve(spark):
     data = "envelope_aggr_curve.csv"
     table_name = 'test_envelope_aggr_curve'
     sql = "select st_envelope_aggr(geos) as my_envelope from test_envelope_aggr_curve"
@@ -769,7 +783,7 @@ def run_test_st_contains_curve(spark):
     save_result("results/%s" % table_name, rs)
 
 
-def run_test_st_within(spark):	  
+def run_test_st_within(spark):
     data = "within.csv"
     table_name = 'test_within'
     sql = "select st_within(left, right) as geos from test_within"
@@ -785,7 +799,7 @@ def run_test_st_within(spark):
     save_result("results/%s" % table_name, rs)
 
 
-def run_test_st_within_curve(spark):	
+def run_test_st_within_curve(spark):
     data = "within_curve.csv"
     table_name = 'test_within_curve'
     sql = "select st_within(left, right) as geos from test_within_curve"
@@ -1015,19 +1029,13 @@ def run_test_st_geomfromgeojson(spark):
     sql = "select st_geomfromgeojson(geos) as geos from test_geomfromjson"
 
     df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
-    ms = time.time_ns()
-    print('---------------------------start time: %s' % str(ms))
-    # rs = spark.sql(sql).cache()
-    rs = spark.sql(sql)
-    me = time.time_ns()
-    print('---------------------------end time: %s' % str(me))
-    print('---------------------------execution time: %s ms' % str((me - ms) / (1000 * 1000)))
-    rs.printSchema()
-    rs.show()
+    execute_sql(spark, sql)
+    # rs.printSchema()
+    # rs.show()
     # save_result("results/%s" % table_name, rs)
 
 
@@ -1042,9 +1050,9 @@ def run_test_st_geomfromgeojson2(spark):
     df.show()
     df.createOrReplaceTempView(table_name)
 
-    rs = spark.sql(sql).cache()
-    rs.printSchema()
-    rs.show()
+    execute_sql(spark, sql)
+    # rs.printSchema()
+    # rs.show()
     save_result("results/%s" % table_name, rs)
 
 
@@ -1186,6 +1194,7 @@ if __name__ == "__main__":
 
     for _ in range(int(sys.argv[1])):
         run_test_st_geomfromgeojson(spark_session)
+        run_test_st_geomfromgeojson2(spark_session)
 
     # run_test_st_geomfromgeojson(spark_session)
 	# run_test_st_geomfromgeojson2(spark_session)
