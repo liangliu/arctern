@@ -1,0 +1,2703 @@
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527795429090668
+---------------------------end time: 1584527795458949955
+---------------------------execution time: 29.859287 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527796260674948
+---------------------------end time: 1584527796264051592
+---------------------------execution time: 3.376644 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527796474489875
+---------------------------end time: 1584527796477581682
+---------------------------execution time: 3.091807 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527796687353416
+---------------------------end time: 1584527796690403724
+---------------------------execution time: 3.050308 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527796876716006
+---------------------------end time: 1584527796879478845
+---------------------------execution time: 2.762839 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527797073167387
+---------------------------end time: 1584527797075731219
+---------------------------execution time: 2.563832 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527797244604066
+---------------------------end time: 1584527797247770286
+---------------------------execution time: 3.16622 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527797425246684
+---------------------------end time: 1584527797427458755
+---------------------------execution time: 2.212071 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527797603382290
+---------------------------end time: 1584527797605631218
+---------------------------execution time: 2.248928 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527797766281165
+---------------------------end time: 1584527797768414412
+---------------------------execution time: 2.133247 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527797922674135
+---------------------------end time: 1584527797924816748
+---------------------------execution time: 2.142613 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527798142315933
+---------------------------end time: 1584527798144201743
+---------------------------execution time: 1.88581 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527798291623059
+---------------------------end time: 1584527798293626358
+---------------------------execution time: 2.003299 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527798462119554
+---------------------------end time: 1584527798464378065
+---------------------------execution time: 2.258511 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527798651404981
+---------------------------end time: 1584527798654076226
+---------------------------execution time: 2.671245 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527798815368581
+---------------------------end time: 1584527798817478533
+---------------------------execution time: 2.109952 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527798974646288
+---------------------------end time: 1584527798976951551
+---------------------------execution time: 2.305263 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527799123661240
+---------------------------end time: 1584527799125646021
+---------------------------execution time: 1.984781 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527799274526557
+---------------------------end time: 1584527799276419360
+---------------------------execution time: 1.892803 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527799429964170
+---------------------------end time: 1584527799431829355
+---------------------------execution time: 1.865185 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527799592563148
+---------------------------end time: 1584527799594376367
+---------------------------execution time: 1.813219 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527799751757511
+---------------------------end time: 1584527799753440138
+---------------------------execution time: 1.682627 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527799940788845
+---------------------------end time: 1584527799942561683
+---------------------------execution time: 1.772838 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527800084402724
+---------------------------end time: 1584527800086237248
+---------------------------execution time: 1.834524 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527800263262481
+---------------------------end time: 1584527800264940171
+---------------------------execution time: 1.67769 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527800447291790
+---------------------------end time: 1584527800448910134
+---------------------------execution time: 1.618344 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527800604450901
+---------------------------end time: 1584527800606149042
+---------------------------execution time: 1.698141 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527800758620214
+---------------------------end time: 1584527800760284311
+---------------------------execution time: 1.664097 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527800942518223
+---------------------------end time: 1584527800944220703
+---------------------------execution time: 1.70248 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527801081427665
+---------------------------end time: 1584527801083152217
+---------------------------execution time: 1.724552 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527801213413173
+---------------------------end time: 1584527801214941648
+---------------------------execution time: 1.528475 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527801400224801
+---------------------------end time: 1584527801401866683
+---------------------------execution time: 1.641882 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527801532946871
+---------------------------end time: 1584527801534597351
+---------------------------execution time: 1.65048 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527801682568594
+---------------------------end time: 1584527801684509975
+---------------------------execution time: 1.941381 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527801862609781
+---------------------------end time: 1584527801864300791
+---------------------------execution time: 1.69101 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527802035881958
+---------------------------end time: 1584527802037445922
+---------------------------execution time: 1.563964 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527802206563450
+---------------------------end time: 1584527802208085896
+---------------------------execution time: 1.522446 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527802336678691
+---------------------------end time: 1584527802342315526
+---------------------------execution time: 5.636835 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527802511630856
+---------------------------end time: 1584527802513105781
+---------------------------execution time: 1.474925 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527802653203527
+---------------------------end time: 1584527802654642816
+---------------------------execution time: 1.439289 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527802795705868
+---------------------------end time: 1584527802797227730
+---------------------------execution time: 1.521862 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527802970114058
+---------------------------end time: 1584527802971671373
+---------------------------execution time: 1.557315 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527803115693773
+---------------------------end time: 1584527803117161672
+---------------------------execution time: 1.467899 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527803287989805
+---------------------------end time: 1584527803289563131
+---------------------------execution time: 1.573326 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527803422162377
+---------------------------end time: 1584527803423696870
+---------------------------execution time: 1.534493 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527803567127830
+---------------------------end time: 1584527803568624354
+---------------------------execution time: 1.496524 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527803702108940
+---------------------------end time: 1584527803703597175
+---------------------------execution time: 1.488235 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527803853720536
+---------------------------end time: 1584527803855179815
+---------------------------execution time: 1.459279 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527804027795391
+---------------------------end time: 1584527804029331944
+---------------------------execution time: 1.536553 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527804160833509
+---------------------------end time: 1584527804162278943
+---------------------------execution time: 1.445434 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|{'TYPE':'POINT','...|
+|{'TYPE':'LINESTRI...|
+|{'TYPE':'POLYGON'...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'COORDINATES': [...|
+|{'GEOMETRIES': [{...|
++--------------------+
+
+---------------------------start time: 1584527804307424201
+---------------------------end time: 1584527804308925802
+---------------------------execution time: 1.501601 ms
+root
+ |-- geos: string (nullable = true)
+
++--------------------+
+|                geos|
++--------------------+
+|  POINT (125.6 10.1)|
+|LINESTRING (102 0...|
+|POLYGON ((100 0,1...|
+|         POINT (1 8)|
+|MULTIPOINT (1 1,3 4)|
+|    MULTIPOINT (3 4)|
+|LINESTRING (1 1,1...|
+|LINESTRING (1 1,1...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|MULTILINESTRING (...|
+|POLYGON ((1 1,1 2...|
+|POLYGON ((0 0,0 4...|
+|POLYGON ((0 0,0 4...|
+|MULTIPOLYGON (((0...|
+|MULTIPOLYGON (((1...|
+|GEOMETRYCOLLECTIO...|
++--------------------+
+

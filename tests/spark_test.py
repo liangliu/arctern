@@ -1021,7 +1021,8 @@ def run_test_st_geomfromgeojson(spark):
 
     ms = time.time_ns()
     print('---------------------------start time: %s' % str(ms))
-    rs = spark.sql(sql).cache()
+    # rs = spark.sql(sql).cache()
+    rs = spark.sql(sql)
     me = time.time_ns()
     print('---------------------------end time: %s' % str(me))
     print('---------------------------execution time: %s ms' % str((me - ms) / (1000 * 1000)))
