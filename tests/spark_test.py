@@ -19,6 +19,7 @@ import shutil
 import os
 import json
 import logging
+from logging.handlers import RotatingFileHandler
 from pyspark.sql import SparkSession
 from arctern_pyspark import register_funcs
 from pyspark.sql.types import *
@@ -49,15 +50,18 @@ def read_data(spark, base_dir, data):
 
 def execute_sql(spark, sql):
     ms = time.time_ns()
-    logging.getLogger().info(str(ms))
+    logger = logging.getLogger(__name__)
+    rHandler = RotatingFileHandler('log.txt', maxBytes=1 * 1024, backupCount=3)
+    logger.addHandler(rHandler)
+    logger.info(str(ms))
 
     rs = spark.sql(sql)
 
     me = time.time_ns()
-    logging.getLogger().info(str(me))
+    logger.info(str(me))
 
     execution_time = str((me - ms) / (1000 * 1000))
-    logging.getLogger().info('execution time: %s ms' % execution_time)
+    logger.info('execution time: %s ms' % execution_time)
 
     return rs, execution_time
 
@@ -1046,8 +1050,8 @@ def run_test_st_geomfromgeojson2(spark):
     sql = "select st_geomfromgeojson(geos) as geos from test_geomfromjson2"
 
     df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql)
