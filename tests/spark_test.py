@@ -1053,7 +1053,7 @@ def run_test_st_geomfromgeojson2(spark):
     execute_sql(spark, sql)
     # rs.printSchema()
     # rs.show()
-    save_result("results/%s" % table_name, rs)
+    # save_result("results/%s" % table_name, rs)
 
 
 def run_test_st_hausdorffdistance(spark):
