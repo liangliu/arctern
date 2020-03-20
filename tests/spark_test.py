@@ -28,6 +28,12 @@ from pyspark.sql.functions import col
 
 base_dir = './data/'
 
+logger = logging.getLogger()
+logger.setLevel(level = logging.INFO)
+rHandler = RotatingFileHandler('log.txt', maxBytes=1 * 1024 * 1024, backupCount=3)
+rHandler.setLevel(logging.INFO)
+logger.addHandler(rHandler)
+
 def clear_result_dir(dir_name):
     try:
         shutil.rmtree(dir_name)
@@ -50,9 +56,11 @@ def read_data(spark, base_dir, data):
 
 def execute_sql(spark, sql):
     ms = time.time_ns()
-    logger = logging.getLogger(__name__)
-    rHandler = RotatingFileHandler('log.txt', maxBytes=1 * 1024, backupCount=3)
-    logger.addHandler(rHandler)
+    # logger = logging.getLogger()
+    # logger.setLevel(level = logging.INFO)
+    # rHandler = RotatingFileHandler('log.txt', maxBytes=1 * 1024 * 1024, backupCount=3)
+    # rHandler.setLevel(logging.INFO)
+    # logger.addHandler(rHandler)
     logger.info(str(ms))
 
     rs = spark.sql(sql)
@@ -1038,6 +1046,7 @@ def run_test_st_geomfromgeojson(spark):
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql)
+    time.sleep(10)
     # rs.printSchema()
     # rs.show()
     # save_result("results/%s" % table_name, rs)
