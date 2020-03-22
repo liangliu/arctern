@@ -59,12 +59,12 @@ def read_data(spark, base_dir, data):
 
 def execute_sql(spark, sql, function_name):
     ms = time.time_ns()
-    logger.info(str(ms))
+    # logger.info(str(ms))
 
     rs = spark.sql(sql)
 
     me = time.time_ns()
-    logger.info(str(me))
+    # logger.info(str(me))
 
     execution_time = str((me - ms) / (1000 * 1000))
     logger.info('function: %s, execution time: %s ms' %
