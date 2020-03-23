@@ -391,8 +391,8 @@ def run_test_st_envelope(spark):
     df.show()
     df.createOrReplaceTempView(table_name)
 
-    execute_sql(spark, sql, 'run_test_st_envelope')
-
+    rs, _ = execute_sql(spark, sql, 'run_test_st_envelope')
+    save_result('results/%s' % table_name, rs)
 
 def run_test_st_envelope_curve(spark):
     data = "envelope_curve.csv"
