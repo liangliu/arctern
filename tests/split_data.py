@@ -148,11 +148,16 @@ def gen_multipoint_int(times):
 def gen_polygon(times):
     brr = []
     for _ in range(times):
+        point = '%s %s' % (random.uniform(1, 10),
+                           random.uniform(1, 10))
+
         arr = []
+        arr.append(point)
         for _ in range(random.randint(2, 20)):
             arr.append('%s %s' % (
-                random.uniform(-100, 100), random.uniform(-100, 100)))
+                random.uniform(1, 10), random.uniform(1, 10)))
 
+        arr.append(point)
         brr.append('LINESTRING (%s)' % ','.join(arr))
     return brr
 
@@ -181,6 +186,7 @@ def gen_geoms(times):
     # arr.extend(gen_linestring_int(times))
     # arr.extend(gen_multipoint(times))
     # arr.extend(gen_multipoint_int(times))
+    arr.extend(gen_polygon(times))
     arr.extend(gen_polygon_int(times))
 
     return arr

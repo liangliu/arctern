@@ -394,6 +394,7 @@ def run_test_st_envelope(spark):
     rs, _ = execute_sql(spark, sql, 'run_test_st_envelope')
     save_result('results/%s' % table_name, rs)
 
+
 def run_test_st_envelope_curve(spark):
     data = "envelope_curve.csv"
     table_name = 'test_envelope_curve'
@@ -1004,6 +1005,7 @@ if __name__ == "__main__":
     register_funcs(spark_session)
 
     run_test_st_isvalid_1(spark_session)
+    run_test_st_makevalid(spark_session)
     # run_test_st_envelope(spark_session)
 
     # for _ in range(int(sys.argv[1])):
