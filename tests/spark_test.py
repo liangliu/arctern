@@ -808,7 +808,8 @@ def run_test_st_makevalid(spark):
     df.show()
     df.createOrReplaceTempView(table_name)
 
-    execute_sql(spark, sql, 'run_test_st_makevalid')
+    rs, etime = execute_sql(spark, sql, 'run_test_st_makevalid')
+    save_result('results/%s' % table_name, rs)
 
 
 def run_test_st_polygonfromenvelope(spark):
