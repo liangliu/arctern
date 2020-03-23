@@ -178,6 +178,19 @@ def gen_polygon_int(times):
     return brr
 
 
+def gen_geometrycollection(arr, times):
+    brr = []
+    size = len(arr)
+    for _ in range(times):
+        start = random.randint(1, size / 2)
+        geom_size = random.randint(2, 10)
+        end = start + geom_size
+        geom_arr = arr[start:end]
+        brr.append('GEOMETRYCOLLECTION (%s)' % ','.join(geom_arr))
+
+    return brr
+
+
 def gen_geoms(times):
     arr = []
     arr.extend(gen_point(times))
@@ -204,6 +217,12 @@ if __name__ == '__main__':
 
     arr = gen_geoms(int(times))
     random.shuffle(arr)
+    brr = gen_geometrycollection(arr, int(times) * 2)
+    arr.extend(brr)
+
+    # for x in brr:
+    #     print(x)
+
     with open(dirpath, 'w') as f:
         for e in arr:
             f.writelines(e + '\n')
