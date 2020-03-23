@@ -208,6 +208,7 @@ def gen_geoms(times):
 if __name__ == '__main__':
     dirpath = sys.argv[1]
     times = sys.argv[2]
+    total = sys.argv[3]
 
     arr = []
     # with open(dirpath, 'r') as f:
@@ -217,7 +218,7 @@ if __name__ == '__main__':
 
     arr = gen_geoms(int(times))
     random.shuffle(arr)
-    brr = gen_geometrycollection(arr, int(times) * 2)
+    brr = gen_geometrycollection(arr, (int(total) - int(times) * 8))
     arr.extend(brr)
 
     # for x in brr:
