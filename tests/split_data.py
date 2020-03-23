@@ -196,17 +196,15 @@ if __name__ == '__main__':
     dirpath = sys.argv[1]
     times = sys.argv[2]
 
-    # arr = []
+    arr = []
     # with open(dirpath, 'r') as f:
-    #     lines = f.readlines()
-    #     xs = [x.strip() for x in lines]
-    #     arr = list(set(xs))
+    #     lines = f.readlines()[1:]
+    #     random.shuffle(lines)
+    #     arr = list(set(lines))
 
     arr = gen_geoms(int(times))
+    random.shuffle(arr)
     with open(dirpath, 'w') as f:
         for e in arr:
             f.writelines(e + '\n')
-    # gen_point(int(dirpath))
-    # gen_point_int(int(dirpath))
-    # gen_linestring(int(dirpath))
-    # gen_linestring_int(int(dirpath))
+            # f.writelines(e)
