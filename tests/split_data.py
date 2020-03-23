@@ -104,9 +104,9 @@ def gen_multipoint(times):
     brr = []
     for _ in range(times):
         arr = []
-        for _ in range(random.randint(2, 20)):
+        for _ in range(random.randint(3, 30)):
             arr.append('%s %s' % (
-                random.uniform(-100, 100), random.uniform(-100, 100)))
+                random.uniform(-20, 20), random.uniform(0, 30)))
 
         brr.append('MULTIPOINT (%s)' % ','.join(arr))
     return brr
@@ -137,7 +137,7 @@ def gen_multipoint_int(times):
     brr = []
     for _ in range(times):
         arr = []
-        for _ in range(random.randint(2, 20)):
+        for _ in range(random.randint(3, 30)):
             arr.append('%s %s' % (
                 random.randint(-100, 100), random.randint(-100, 100)))
 
