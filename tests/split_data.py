@@ -1,5 +1,6 @@
 import os
 import sys
+import random
 
 curves = [
     'CIRCULARSTRING', 'COMPOUNDCURVE', 'MULTICURVE', 'CURVEPOLYGON',
@@ -78,15 +79,73 @@ def split_all(folder):
                     split_data(os.path.join(folder, f))
 
 
+def gen_point(times):
+    arr = []
+    for _ in range(times):
+        x = random.uniform(-100, 100)
+        y = random.uniform(-100, 100)
+        arr.append('POINT (%s %s)' % (x, y))
+    return arr
+
+
+def gen_linestring(times):
+    brr = []
+    for _ in range(times):
+        arr = []
+        for _ in range(random.randint(2, 20)):
+            arr.append('%s %s' % (
+                random.uniform(-100, 100), random.uniform(-100, 100)))
+
+        brr.append('LINESTRING (%s)' % ','.join(arr))
+    return brr
+
+
+def gen_point_int(times):
+    arr = []
+    for _ in range(times):
+        x = random.randint(-100, 100)
+        y = random.randint(-100, 100)
+        arr.append('POINT (%s %s)' % (x, y))
+    return arr
+
+
+def gen_linestring_int(times):
+    brr = []
+    for _ in range(times):
+        arr = []
+        for _ in range(random.randint(2, 20)):
+            arr.append('%s %s' % (
+                random.randint(-100, 100), random.randint(-100, 100)))
+
+        brr.append('LINESTRING (%s)' % ','.join(arr))
+    return brr
+
+
+def gen_geoms(times):
+    arr = []
+    arr.extend(gen_point(times))
+    arr.extend(gen_point_int(times))
+    arr.extend(gen_linestring(times))
+    arr.extend(gen_linestring_int(times))
+
+    return arr
+
+
 if __name__ == '__main__':
     dirpath = sys.argv[1]
+    times = sys.argv[2]
 
     # arr = []
-    with open(dirpath, 'r') as f:
-        lines = f.readlines()
-        xs = [x.strip() for x in lines]
-        arr = list(set(xs))
+    # with open(dirpath, 'r') as f:
+    #     lines = f.readlines()
+    #     xs = [x.strip() for x in lines]
+    #     arr = list(set(xs))
 
+    arr = gen_geoms(int(times))
     with open(dirpath, 'w') as f:
         for e in arr:
             f.writelines(e + '\n')
+    # gen_point(int(dirpath))
+    # gen_point_int(int(dirpath))
+    # gen_linestring(int(dirpath))
+    # gen_linestring_int(int(dirpath))
