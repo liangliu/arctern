@@ -171,10 +171,10 @@ def gen_polygon_int(times):
 
 def gen_geoms(times):
     arr = []
-    arr.extend(gen_point(times))
-    arr.extend(gen_point_int(times))
-    arr.extend(gen_linestring(times))
-    arr.extend(gen_linestring_int(times))
+    # arr.extend(gen_point(times))
+    # arr.extend(gen_point_int(times))
+    # arr.extend(gen_linestring(times))
+    # arr.extend(gen_linestring_int(times))
     arr.extend(gen_multipoint(times))
     arr.extend(gen_multipoint_int(times))
 

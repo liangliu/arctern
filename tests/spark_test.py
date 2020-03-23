@@ -381,7 +381,8 @@ def run_test_st_buffer_curve1(spark):
 
 
 def run_test_st_envelope(spark):
-    data = "envelope.csv"
+    # data = "envelope.csv"
+    data = "gen.csv"
     table_name = 'test_envelope'
     sql = "select st_envelope(geos) as geos from test_envelope"
 
@@ -1003,6 +1004,7 @@ if __name__ == "__main__":
     register_funcs(spark_session)
 
     run_test_st_isvalid_1(spark_session)
+    run_test_st_envelope(spark_session)
 
     # for _ in range(int(sys.argv[1])):
     #     run_test_st_geomfromgeojson(spark_session)
