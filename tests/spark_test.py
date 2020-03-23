@@ -158,8 +158,8 @@ def run_test_st_isvalid_1(spark):
     # df.show()
     df.createOrReplaceTempView(table_name)
 
-    execute_sql(spark, sql, 'run_test_st_isvalid_1')
-    save_result('results/%s' % table_name, df)
+    rs, _ = execute_sql(spark, sql, 'run_test_st_isvalid_1')
+    save_result('results/%s' % table_name, rs)
 
 
 def run_test_st_isvalid_curve(spark):
