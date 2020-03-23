@@ -1004,7 +1004,7 @@ if __name__ == "__main__":
     register_funcs(spark_session)
 
     run_test_st_isvalid_1(spark_session)
-    run_test_st_envelope(spark_session)
+    # run_test_st_envelope(spark_session)
 
     # for _ in range(int(sys.argv[1])):
     #     run_test_st_geomfromgeojson(spark_session)

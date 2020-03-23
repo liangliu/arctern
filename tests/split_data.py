@@ -160,12 +160,16 @@ def gen_polygon(times):
 def gen_polygon_int(times):
     brr = []
     for _ in range(times):
+        point = '%s %s' % (random.randint(-100, 100),
+                           random.randint(-100, 100))
         arr = []
+        arr.append(point)
         for _ in range(random.randint(2, 20)):
             arr.append('%s %s' % (
                 random.randint(-100, 100), random.randint(-100, 100)))
 
-        brr.append('LINESTRING (%s)' % ','.join(arr))
+        arr.append(point)
+        brr.append('POLYGON ((%s))' % ','.join(arr))
     return brr
 
 
@@ -175,8 +179,9 @@ def gen_geoms(times):
     # arr.extend(gen_point_int(times))
     # arr.extend(gen_linestring(times))
     # arr.extend(gen_linestring_int(times))
-    arr.extend(gen_multipoint(times))
-    arr.extend(gen_multipoint_int(times))
+    # arr.extend(gen_multipoint(times))
+    # arr.extend(gen_multipoint_int(times))
+    arr.extend(gen_polygon_int(times))
 
     return arr
 
