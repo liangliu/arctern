@@ -79,40 +79,14 @@ def split_all(folder):
 
 
 if __name__ == '__main__':
-    # split_data('./data/area.csv')
-    # split_data('./data/crosses.csv')
-    # split_all('./data')
     dirpath = sys.argv[1]
-    # arr = os.listdir(dirpath)
-    # for a in arr:
-    #     file_path = os.path.join(dirpath, a)
-    #     if os.path.isfile(file_path):
-    #         # print(file_path)
 
-    #         with open(file_path, 'r') as f:
-    #             content = f.read().strip()
-
-    #         with open(file_path, 'w') as f:
-    #             f.write(content)
-
-    arr = []
-    # case:
-    #   name: run_test_st_length
-    #   spark_result_name: test_length
-    #   expected_name: st_length
-
+    # arr = []
     with open(dirpath, 'r') as f:
         lines = f.readlines()
+        xs = [x.strip() for x in lines]
+        arr = list(set(xs))
 
-        for line in lines:
-            tests = line.split('=')
-            arr.append('  -\n')
-            arr.append('    case:\n')
-            arr.append('      name: %s\n' % tests[0])
-            arr.append('      spark_result_name: %s\n' % tests[1])
-            arr.append('      expected_name: %s\n' % tests[3])
-            # arr.append('\n')
-
-    with open('test.txt', 'w') as f:
+    with open(dirpath, 'w') as f:
         for e in arr:
-            f.writelines(e)
+            f.writelines(e + '\n')
