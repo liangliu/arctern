@@ -12,13 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 __all__ = [
-    "save_png",
+    "save_png"
 ]
 
 def save_png(hex_str, file_name):
-    import binascii
-    binary_string = binascii.unhexlify(hex_str)
+    import base64
+    binary_string = base64.b64decode(hex_str)
     with open(file_name, 'wb') as png:
         png.write(binary_string)
