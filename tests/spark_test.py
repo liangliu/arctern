@@ -61,8 +61,12 @@ def execute_sql(spark, sql, function_name):
     ms = time.time_ns()
     # logger.info(str(ms))
 
-    rs = spark.sql(sql).cache().count()
+    rs = spark.sql(sql).cache()
+    rs.count()
+    rs.unpersist()
     # rs = spark.sql(sql).count()
+
+    # spark.clearcache()
 
     me = time.time_ns()
     # logger.info(str(me))
@@ -1066,8 +1070,8 @@ if __name__ == "__main__":
         run_test_st_npoints(spark_session)
         run_test_st_geometrytype(spark_session)
         run_test_st_geometrytype_curve(spark_session)
-        run_test_st_transform(spark_session)
-        run_test_st_transform1(spark_session)
+        # run_test_st_transform(spark_session)
+        # run_test_st_transform1(spark_session)
         run_test_st_intersects(spark_session)
         run_test_st_intersects_curve(spark_session)
         run_test_st_contains(spark_session)
