@@ -31,7 +31,7 @@ base_dir = './data/'
 logger = logging.getLogger()
 logger.setLevel(level=logging.INFO)
 rHandler = RotatingFileHandler(
-    'log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
+    '/tmp/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
 rHandler.setLevel(logging.INFO)
 logger.addHandler(rHandler)
 
@@ -1020,7 +1020,8 @@ if __name__ == "__main__":
     url = 'local'
     # spark_session = SparkSession.builder.appName(
     #     "Python zgis sample").master(url).getOrCreate()
-    spark_session = SparkSession.builder.appName("Python zgis sample").getOrCreate()
+    spark_session = SparkSession.builder.appName(
+        "Python zgis sample").getOrCreate()
     spark_session.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
 
     clear_result_dir('/tmp/results')
