@@ -153,3 +153,6 @@ tests/results
 tests/rundocker.sh
 tests/runlocal.sh
 tests/log*
+tests/draw_map/test*.png
+
+gui/server/data/0_5M_nyc_taxi_and_building.csv

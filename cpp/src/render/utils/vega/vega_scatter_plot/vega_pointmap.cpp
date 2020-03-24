@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#include "render/utils/vega/vega_scatter_plot/vega_circle2d.h"
+#include "render/utils/vega/vega_scatter_plot/vega_pointmap.h"
 
 namespace arctern {
 namespace render {
 
-VegaCircle2d::VegaCircle2d(const std::string& json) { Parse(json); }
+VegaPointmap::VegaPointmap(const std::string& json) { Parse(json); }
 
-void VegaCircle2d::Parse(const std::string& json) {
+void VegaPointmap::Parse(const std::string& json) {
   rapidjson::Document document;
   document.Parse(json.c_str());
 
@@ -60,7 +60,7 @@ void VegaCircle2d::Parse(const std::string& json) {
       !JsonTypeCheck(mark_enter["opacity"]["value"], rapidjson::Type::kNumberType)) {
     return;
   }
-  circle_params_.radius = mark_enter["strokeWidth"]["value"].GetInt();
+  circle_params_.radius = mark_enter["strokeWidth"]["value"].GetDouble();
   circle_params_.color = ColorParser(mark_enter["stroke"]["value"].GetString()).color();
   circle_params_.color.a = mark_enter["opacity"]["value"].GetDouble();
 }
