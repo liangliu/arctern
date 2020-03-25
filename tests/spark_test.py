@@ -26,7 +26,8 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import col
 
 
-base_dir = './data/'
+base_dir = '/tmp/arctern/data/'
+# base_dir = './data/'
 
 logger = logging.getLogger()
 logger.setLevel(level=logging.INFO)
@@ -1026,7 +1027,6 @@ if __name__ == "__main__":
 
     clear_result_dir('/tmp/results')
     register_funcs(spark_session)
-
     # run_test_st_isvalid_1(spark_session)
     # run_test_st_makevalid(spark_session)
     # run_test_st_envelope(spark_session)
