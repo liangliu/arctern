@@ -1025,7 +1025,9 @@ if __name__ == "__main__":
 
     clear_result_dir('/tmp/results')
     register_funcs(spark_session)
-
+    print('-----------------------------------------------------------------------------------------------')
+    os.system(r"hostname")
+    print('-----------------------------------------------------------------------------------------------')
     # run_test_st_isvalid_1(spark_session)
     # run_test_st_makevalid(spark_session)
     # run_test_st_envelope(spark_session)
