@@ -1,5 +1,14 @@
 #!/bin/bash
 
+for i in {10..20}
+do
+    echo ${i}
+done
+
+exit 0
+
+
+
 N=22
 for i in $(seq $N)
 do
