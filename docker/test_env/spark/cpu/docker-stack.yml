@@ -19,7 +19,9 @@ services:
           memory: 2G
         reservations:
           cpus: '0.5'
-          memory: 200M
+          memory: 2000M
+    volumes:
+      - test-volume:${LOCAL_PATH}
     configs:
       - source: spark-defaults-conf
         target: /opt/spark/conf/spark-defaults.conf
@@ -45,10 +47,10 @@ services:
       resources:
         limits:
           cpus: '1'
-          memory: 1200M
+          memory: 20000M
         reservations:
           cpus: '0.5'
-          memory: 200M
+          memory: 2000M
 
 configs:
   spark-defaults-conf:
@@ -60,7 +62,7 @@ volumes:
     driver_opts:
       type: "cifs"
       o: "vers=1.0,username=${CIFS_USERNAME},password=${CIFS_PASSWORD}"
-      device: "${NETWORK_PATH}"
+      device: "${NETWORK_PATH}/arctern"
 
 networks:
   default:

@@ -26,13 +26,13 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import col
 
 
-base_dir = '/tmp/arctern/data/'
+base_dir = '/arctern/tests/nasdata/arctern/data/'
 # base_dir = './data/'
 
 logger = logging.getLogger()
 logger.setLevel(level=logging.INFO)
 rHandler = RotatingFileHandler(
-    '/tmp/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
+    '/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
 rHandler.setLevel(logging.INFO)
 logger.addHandler(rHandler)
 
@@ -1027,6 +1027,7 @@ if __name__ == "__main__":
 
     clear_result_dir('/tmp/results')
     register_funcs(spark_session)
+    # time.sleep(100)
     # run_test_st_isvalid_1(spark_session)
     # run_test_st_makevalid(spark_session)
     # run_test_st_envelope(spark_session)
@@ -1036,9 +1037,9 @@ if __name__ == "__main__":
         run_test_st_geomfromgeojson2(spark_session)
         run_test_st_curvetoline(spark_session)
         run_test_st_point(spark_session)
-        run_test_envelope_aggr_1(spark_session)
-        run_test_envelope_aggr_curve(spark_session)
-        run_test_envelope_aggr_2(spark_session)
+        # run_test_envelope_aggr_1(spark_session)
+        # run_test_envelope_aggr_curve(spark_session)
+        # run_test_envelope_aggr_2(spark_session)
         # run_test_union_aggr_2(spark_session)
         # run_test_union_aggr_curve(spark_session)
         run_test_st_isvalid_1(spark_session)

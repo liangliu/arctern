@@ -5,8 +5,9 @@ services:
     image: ${ARCTERN_REPO}:${ARCTERN_TAG}
     volumes:
       - ../..:/arctern
+      - test-volume:${LOCAL_PATH}
     command: &spark-test
-      ["/arctern/ci/scripts/run_spark_regression.sh", "--master", "spark://spark-master:7077", "--conda_env=arctern", "/arctern/tests/spark_test.py"]
+      ["/arctern/ci/scripts/run_spark_regression.sh", "--master", "spark://spark-master:7077", "--conda_env=arctern", "/arctern/tests/spark_test.py 1"]
     deploy:
       resources:
         limits:
@@ -15,3 +16,10 @@ services:
         reservations:
           cpus: '0.5'
           memory: 200M
+
+volumes:
+  test-volume:
+    driver_opts:
+      type: "cifs"
+      o: "vers=1.0,username=${CIFS_USERNAME},password=${CIFS_PASSWORD}"
+      device: "${NETWORK_PATH}"
