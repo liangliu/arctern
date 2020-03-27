@@ -26,14 +26,15 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import col
 
 
-base_dir = '/arctern/tests/nasdata/arctern/data/'
-# base_dir = './data/'
+# base_dir = '/arctern/tests/nasdata/arctern/data/'
+base_dir = './data/'
 
 logger = logging.getLogger()
 logger.setLevel(level=logging.INFO)
-rHandler = RotatingFileHandler(
-    '/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
+# rHandler = RotatingFileHandler('/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
+rHandler = RotatingFileHandler('./log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
 rHandler.setLevel(logging.INFO)
+rHandler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(filename)s[:%(lineno)d] - %(message)s"))
 logger.addHandler(rHandler)
 
 
@@ -63,8 +64,8 @@ def execute_sql(spark, sql, function_name):
     # logger.info(str(ms))
 
     rs = spark.sql(sql).cache()
-    rs.count()
-    rs.unpersist()
+    # rs.count()
+    # rs.unpersist()
     # rs = spark.sql(sql).count()
 
     # spark.clearcache()
@@ -166,7 +167,7 @@ def run_test_st_isvalid_1(spark):
     df.createOrReplaceTempView(table_name)
 
     rs, _ = execute_sql(spark, sql, 'run_test_st_isvalid_1')
-    # save_result('results/%s' % table_name, rs)
+    save_result('results/%s' % table_name, rs)
 
 
 def run_test_st_isvalid_curve(spark):
@@ -1019,17 +1020,15 @@ def run_test_st_astext(spark):
 
 if __name__ == "__main__":
     url = 'local'
-    # spark_session = SparkSession.builder.appName(
-    #     "Python zgis sample").master(url).getOrCreate()
-    spark_session = SparkSession.builder.appName(
-        "Python zgis sample").getOrCreate()
+    spark_session = SparkSession.builder.appName("Python zgis sample").master(url).getOrCreate()
+    # spark_session = SparkSession.builder.appName("Python zgis sample").getOrCreate()
     spark_session.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
 
     clear_result_dir('/tmp/results')
     register_funcs(spark_session)
     # time.sleep(100)
-    # run_test_st_isvalid_1(spark_session)
-    run_test_st_makevalid(spark_session)
+    run_test_st_isvalid_1(spark_session)
+    # run_test_st_makevalid(spark_session)
     # run_test_st_envelope(spark_session)
 
     # for _ in range(int(sys.argv[1])):
