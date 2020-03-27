@@ -7,7 +7,7 @@ services:
       - ../..:/arctern
       - test-volume:${LOCAL_PATH}
     command: &spark-test
-      ["/arctern/ci/scripts/run_spark_regression.sh", "--master", "spark://spark-master:7077", "--conda_env=arctern", "/arctern/tests/spark_test.py 1"]
+      ["/arctern/ci/scripts/run_spark_regression.sh", "--master", "spark://spark-master:7077", "--conda_env=arctern", "/arctern/tests/spark_test.py 2"]
     deploy:
       resources:
         limits:

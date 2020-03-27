@@ -29,10 +29,11 @@ from pyspark.sql.functions import col
 base_dir = '/arctern/tests/nasdata/arctern/data/'
 # base_dir = './data/'
 
+logging.basicConfig(level=logging.DEBUG, format="%(asctime)s %(levelname)s %(threadName)s %(name)s %(message)s", filemode='w')
 logger = logging.getLogger()
-logger.setLevel(level=logging.INFO)
-rHandler = RotatingFileHandler(
-    '/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
+formatter = logging.Formatter("%(asctime)s %(levelname)s %(threadName)s %(name)s %(message)s")
+rHandler = RotatingFileHandler('/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
+rHandler.setFormatter(formatter)
 rHandler.setLevel(logging.INFO)
 logger.addHandler(rHandler)
 
