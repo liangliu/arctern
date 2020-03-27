@@ -26,14 +26,16 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import col
 
 
-base_dir = '/arctern/tests/nasdata/arctern/data/'
-# base_dir = './data/'
+# base_dir = '/arctern/tests/nasdata/arctern/data/'
+base_dir = './data/'
 
 logging.basicConfig(level=logging.DEBUG, format="%(asctime)s %(levelname)s %(threadName)s %(name)s %(message)s", filemode='w')
 logger = logging.getLogger()
 formatter = logging.Formatter("%(asctime)s %(levelname)s %(threadName)s %(name)s %(message)s")
 rHandler = RotatingFileHandler('/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
 rHandler.setFormatter(formatter)
+logger.setLevel(level=logging.INFO)
+# rHandler = RotatingFileHandler('/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
 rHandler.setLevel(logging.INFO)
 logger.addHandler(rHandler)
 
@@ -64,8 +66,8 @@ def execute_sql(spark, sql, function_name):
     # logger.info(str(ms))
 
     rs = spark.sql(sql).cache()
-    rs.count()
-    rs.unpersist()
+    # rs.count()
+    # rs.unpersist()
     # rs = spark.sql(sql).count()
 
     # spark.clearcache()
@@ -167,7 +169,7 @@ def run_test_st_isvalid_1(spark):
     df.createOrReplaceTempView(table_name)
 
     rs, _ = execute_sql(spark, sql, 'run_test_st_isvalid_1')
-    # save_result('results/%s' % table_name, rs)
+    save_result('results/%s' % table_name, rs)
 
 
 def run_test_st_isvalid_curve(spark):
@@ -829,8 +831,8 @@ def run_test_st_makevalid(spark):
     df.show()
     df.createOrReplaceTempView(table_name)
 
-    rs, etime = execute_sql(spark, sql, 'run_test_st_makevalid')
-    # ('results/%s' % table_name, rs)
+    rs, _ = execute_sql(spark, sql, 'run_test_st_makevalid')
+    save_result('results/%s' % table_name, rs)
 
 
 def run_test_st_polygonfromenvelope(spark):
@@ -1020,16 +1022,14 @@ def run_test_st_astext(spark):
 
 if __name__ == "__main__":
     url = 'local'
-    # spark_session = SparkSession.builder.appName(
-    #     "Python zgis sample").master(url).getOrCreate()
-    spark_session = SparkSession.builder.appName(
-        "Python zgis sample").getOrCreate()
+    spark_session = SparkSession.builder.appName("Python zgis sample").master(url).getOrCreate()
+    # spark_session = SparkSession.builder.appName("Python zgis sample").getOrCreate()
     spark_session.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
 
     clear_result_dir('/tmp/results')
     register_funcs(spark_session)
     # time.sleep(100)
-    # run_test_st_isvalid_1(spark_session)
+    run_test_st_isvalid_1(spark_session)
     # run_test_st_makevalid(spark_session)
     # run_test_st_envelope(spark_session)
 
@@ -1102,5 +1102,74 @@ if __name__ == "__main__":
         run_test_st_geomfromtext(spark_session)
         run_test_st_geomfromwkt(spark_session)
         run_test_st_astext(spark_session)
+    # for _ in range(int(sys.argv[1])):
+    #     run_test_st_geomfromgeojson(spark_session)
+    #     run_test_st_geomfromgeojson2(spark_session)
+    #     run_test_st_curvetoline(spark_session)
+    #     run_test_st_point(spark_session)
+    #     # run_test_envelope_aggr_1(spark_session)
+    #     # run_test_envelope_aggr_curve(spark_session)
+    #     # run_test_envelope_aggr_2(spark_session)
+    #     # run_test_union_aggr_2(spark_session)
+    #     # run_test_union_aggr_curve(spark_session)
+    #     run_test_st_isvalid_1(spark_session)
+    #     run_test_st_isvalid_curve(spark_session)
+    #     run_test_st_intersection(spark_session)
+    #     run_test_st_intersection_curve(spark_session)
+    #     run_test_st_convexhull(spark_session)
+    #     run_test_st_convexhull_curve(spark_session)
+    #     run_test_st_buffer(spark_session)
+    #     run_test_st_buffer1(spark_session)
+    #     run_test_st_buffer2(spark_session)
+    #     run_test_st_buffer3(spark_session)
+    #     run_test_st_buffer4(spark_session)
+    #     run_test_st_buffer5(spark_session)
+    #     run_test_st_buffer6(spark_session)
+    #     run_test_st_buffer_curve(spark_session)
+    #     run_test_st_buffer_curve1(spark_session)
+    #     run_test_st_envelope(spark_session)
+    #     run_test_st_envelope_curve(spark_session)
+    #     run_test_st_centroid(spark_session)
+    #     run_test_st_centroid_curve(spark_session)
+    #     run_test_st_length(spark_session)
+    #     run_test_st_length_curve(spark_session)
+    #     run_test_st_area(spark_session)
+    #     run_test_st_area_curve(spark_session)
+    #     run_test_st_distance(spark_session)
+    #     run_test_st_distance_curve(spark_session)
+    #     run_test_st_issimple(spark_session)
+    #     run_test_st_issimple_curve(spark_session)
+    #     run_test_st_npoints(spark_session)
+    #     run_test_st_geometrytype(spark_session)
+    #     run_test_st_geometrytype_curve(spark_session)
+    #     # run_test_st_transform(spark_session)
+    #     # run_test_st_transform1(spark_session)
+    #     run_test_st_intersects(spark_session)
+    #     run_test_st_intersects_curve(spark_session)
+    #     run_test_st_contains(spark_session)
+    #     run_test_st_contains_curve(spark_session)
+    #     run_test_st_within(spark_session)
+    #     run_test_st_within_curve(spark_session)
+    #     run_test_st_equals_1(spark_session)
+    #     run_test_st_equals_2(spark_session)
+    #     run_test_st_crosses(spark_session)
+    #     run_test_st_crosses_curve(spark_session)
+    #     run_test_st_overlaps(spark_session)
+    #     run_test_st_overlaps_curve(spark_session)
+    #     run_test_st_touches(spark_session)
+    #     run_test_st_touches_curve(spark_session)
+    #     run_test_st_makevalid(spark_session)
+    #     run_test_st_precisionreduce(spark_session)
+    #     run_test_st_polygonfromenvelope(spark_session)
+    #     run_test_st_simplifypreservetopology(spark_session)
+    #     run_test_st_simplifypreservetopology_curve(spark_session)
+    #     run_test_st_hausdorffdistance(spark_session)
+    #     run_test_st_hausdorffdistance_curve(spark_session)
+    #     run_test_st_pointfromtext(spark_session)
+    #     run_test_st_polygonfromtext(spark_session)
+    #     run_test_st_linestringfromtext(spark_session)
+    #     run_test_st_geomfromtext(spark_session)
+    #     run_test_st_geomfromwkt(spark_session)
+    #     run_test_st_astext(spark_session)
 
     spark_session.stop()
