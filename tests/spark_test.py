@@ -37,7 +37,7 @@ logger = logging.getLogger()
 formatter = logging.Formatter(
     "%(asctime)s %(levelname)s %(threadName)s %(name)s %(message)s")
 rHandler = RotatingFileHandler(
-    '/arctern/tests/nasdata/arctern/%s.txt' % logname, maxBytes=1 * 1024 * 1024, backupCount=10)
+    '/arctern/tests/nasdata/arctern/log_%s.txt' % logname, maxBytes=1 * 1024 * 1024, backupCount=10)
 rHandler.setFormatter(formatter)
 logger.setLevel(level=logging.INFO)
 # rHandler = RotatingFileHandler('/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
