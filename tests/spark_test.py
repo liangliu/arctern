@@ -26,8 +26,8 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import col
 
 
-# base_dir = '/arctern/tests/nasdata/arctern/data/'
-base_dir = './data/'
+base_dir = '/arctern/tests/nasdata/arctern/data/'
+# base_dir = './data/'
 
 logging.basicConfig(level=logging.DEBUG,
                     format="%(asctime)s %(levelname)s %(threadName)s %(name)s %(message)s", filemode='w')
