@@ -43,7 +43,7 @@ services:
     networks:
       - default
     deploy:
-      replicas: 30
+      replicas: 44
       resources:
         limits:
           cpus: '1'
