@@ -29,13 +29,15 @@ from pyspark.sql.functions import col
 base_dir = '/arctern/tests/nasdata/arctern/data/'
 # base_dir = './data/'
 
+logname = time.strftime("%Y%m%d%H%M%S", time.localtime(time.time()))
+
 logging.basicConfig(level=logging.DEBUG,
                     format="%(asctime)s %(levelname)s %(threadName)s %(name)s %(message)s", filemode='w')
 logger = logging.getLogger()
 formatter = logging.Formatter(
     "%(asctime)s %(levelname)s %(threadName)s %(name)s %(message)s")
 rHandler = RotatingFileHandler(
-    '/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
+    '/arctern/tests/nasdata/arctern/%s.txt' % logname, maxBytes=1 * 1024 * 1024, backupCount=10)
 rHandler.setFormatter(formatter)
 logger.setLevel(level=logging.INFO)
 # rHandler = RotatingFileHandler('/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
@@ -571,6 +573,7 @@ def run_test_st_npoints(spark):
 
 def run_test_st_geometrytype(spark):
     data = "geometrytype.csv"
+    data = 'single.csv'
     table_name = 'test_gt'
     sql = "select st_geometrytype(geos) as geos from test_gt"
 
@@ -990,6 +993,7 @@ def run_test_st_linestringfromtext(spark):
 
 def run_test_st_geomfromtext(spark):
     data = "geomfromtext.csv"
+    data = 'single.csv'
     table_name = 'test_geomfromtext'
     sql = "select st_geomfromtext(geos) as geos from test_geomfromtext"
 
@@ -1003,6 +1007,7 @@ def run_test_st_geomfromtext(spark):
 
 def run_test_st_geomfromwkt(spark):
     data = "geomfromtext.csv"
+    data = 'single.csv'
     table_name = 'test_geomfromwkt'
     sql = "select st_geomfromwkt(geos) as geos from test_geomfromwkt"
 
@@ -1016,6 +1021,7 @@ def run_test_st_geomfromwkt(spark):
 
 def run_test_st_astext(spark):
     data = "geomfromtext.csv"
+    data = 'single.csv'
     table_name = 'test_astext'
     sql = "select st_astext(geos) as geos from test_astext"
 
@@ -1030,7 +1036,8 @@ def run_test_st_astext(spark):
 if __name__ == "__main__":
     url = 'local'
     # spark_session = SparkSession.builder.appName("Python zgis sample").master(url).getOrCreate()
-    spark_session = SparkSession.builder.appName("Python zgis sample").getOrCreate()
+    spark_session = SparkSession.builder.appName(
+        "Python zgis sample").getOrCreate()
     spark_session.conf.set("spark.sql.execution.arrow.pyspark.enabled", "true")
 
     clear_result_dir('/tmp/results')

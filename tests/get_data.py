@@ -1,5 +1,10 @@
 import sys
+import time
 
+logname = time.strftime("%Y%m%d%H%M%S", time.localtime(time.time()))
+
+print(logname)
+exit(0)
 result = sys.argv[1]
 data = sys.argv[2]
 
