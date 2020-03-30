@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#	  http://www.apache.org/licenses/LICENSE-2.0
+#     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -26,8 +26,8 @@ from pyspark.sql.types import *
 from pyspark.sql.functions import col
 
 
-base_dir = '/arctern/tests/nasdata/arctern/data/'
-# base_dir = './data/'
+# base_dir = '/arctern/tests/nasdata/arctern/data/'
+base_dir = './data/'
 
 logname = time.strftime("%Y%m%d%H%M%S", time.localtime(time.time()))
 
@@ -37,7 +37,7 @@ logger = logging.getLogger()
 formatter = logging.Formatter(
     "%(asctime)s %(levelname)s %(threadName)s %(name)s %(message)s")
 rHandler = RotatingFileHandler(
-    '/arctern/tests/nasdata/arctern/log_%s.txt' % logname, maxBytes=1 * 1024 * 1024, backupCount=10)
+    base_dir + 'log_%s.txt' % logname, maxBytes=1 * 1024 * 1024, backupCount=10)
 rHandler.setFormatter(formatter)
 logger.setLevel(level=logging.INFO)
 # rHandler = RotatingFileHandler('/arctern/tests/nasdata/arctern/log.txt', maxBytes=1 * 1024 * 1024, backupCount=10)
@@ -155,13 +155,13 @@ def run_test_envelope_aggr_2(spark):
     execute_sql(spark, sql, 'run_test_envelope_aggr_2')
 
 
-def run_test_st_isvalid_1(spark):
+def run_test_st_isvalid_1(spark, df):
     # data = "isvalid.csv"
     data = "single.csv"
     table_name = 'test_isvalid'
     sql = "select st_isvalid(geos) as is_valid from test_isvalid"
 
-    df = read_data(spark, base_dir, data)
+    # df = read_data(spark, base_dir, data)
     # df.printSchema()
     # df.show()
     df.createOrReplaceTempView(table_name)
@@ -210,15 +210,15 @@ def run_test_union_aggr_curve(spark):
     execute_sql(spark, sql, 'run_test_union_aggr_curve')
 
 
-def run_test_st_intersection(spark):
+def run_test_st_intersection(spark, df):
     data = "intersection.csv"
     data = "double.csv"
     table_name = 'test_intersection'
     sql = "select st_intersection(left, right) from test_intersection"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_intersection')
@@ -237,15 +237,15 @@ def run_test_st_intersection_curve(spark):
     execute_sql(spark, sql, 'run_test_st_intersection_curve')
 
 
-def run_test_st_convexhull(spark):
+def run_test_st_convexhull(spark, df):
     data = "convexhull.csv"
     data = 'single.csv'
     table_name = 'test_convexhull'
     sql = "select st_convexhull(geos) as geos from test_convexhull"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_convexhull')
@@ -265,16 +265,16 @@ def run_test_st_convexhull_curve(spark):
     execute_sql(spark, sql, 'run_test_st_convexhull_curve')
 
 
-def run_test_st_buffer(spark):
+def run_test_st_buffer(spark, df):
     data = "buffer.csv"
     data = 'single.csv'
     table_name = 'test_buffer'
     sql = "select st_buffer(geos, 0) as geos from test_buffer"
 
-    df = read_data(spark, base_dir, data)
-    # df = df.withColumn("d", col("distance").cast("double"))
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # # df = df.withColumn("d", col("distance").cast("double"))
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_buffer')
@@ -393,16 +393,16 @@ def run_test_st_buffer_curve1(spark):
     execute_sql(spark, sql, 'run_test_st_buffer_curve1')
 
 
-def run_test_st_envelope(spark):
+def run_test_st_envelope(spark, df):
     # data = "envelope.csv"
     # data = "gen.csv"
     data = 'single.csv'
     table_name = 'test_envelope'
     sql = "select st_envelope(geos) as geos from test_envelope"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     rs, _ = execute_sql(spark, sql, 'run_test_st_envelope')
@@ -422,15 +422,15 @@ def run_test_st_envelope_curve(spark):
     execute_sql(spark, sql, 'run_test_st_envelope_curve')
 
 
-def run_test_st_centroid(spark):
+def run_test_st_centroid(spark, df):
     data = "centroid.csv"
     data = 'single.csv'
     table_name = 'test_centroid'
     sql = "select st_centroid(geos) as my_centroid from test_centroid"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_centroid')
@@ -449,15 +449,15 @@ def run_test_st_centroid_curve(spark):
     execute_sql(spark, sql, 'run_test_st_centroid_curve')
 
 
-def run_test_st_length(spark):
+def run_test_st_length(spark, df):
     data = "length.csv"
     data = 'single.csv'
     table_name = 'test_length'
     sql = "select st_length(geos) as my_length from test_length"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_length')
@@ -476,15 +476,15 @@ def run_test_st_length_curve(spark):
     execute_sql(spark, sql, 'run_test_st_length_curve')
 
 
-def run_test_st_area(spark):
+def run_test_st_area(spark, df):
     data = "area.csv"
     data = 'single.csv'
     table_name = 'test_area'
     sql = "select st_area(geos) as my_area from test_area"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_area')
@@ -503,15 +503,15 @@ def run_test_st_area_curve(spark):
     execute_sql(spark, sql, 'run_test_st_area_curve')
 
 
-def run_test_st_distance(spark):
+def run_test_st_distance(spark, df):
     data = "distance.csv"
     data = "double.csv"
     table_name = 'test_distance'
     sql = "select st_distance(left, right) as my_distance from test_distance"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_distance')
@@ -530,15 +530,15 @@ def run_test_st_distance_curve(spark):
     execute_sql(spark, sql, 'run_test_st_distance_curve')
 
 
-def run_test_st_issimple(spark):
+def run_test_st_issimple(spark, df):
     data = "issimple.csv"
     data = 'single.csv'
     table_name = 'test_issimple'
     sql = "select st_issimple(geos) from test_issimple"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_issimple')
@@ -557,29 +557,29 @@ def run_test_st_issimple_curve(spark):
     execute_sql(spark, sql, 'run_test_st_issimple_curve')
 
 
-def run_test_st_npoints(spark):
+def run_test_st_npoints(spark, df):
     data = "npoints.csv"
     data = 'single.csv'
     table_name = 'test_npoints'
     sql = "select st_npoints(geos) as my_npoints from test_npoints"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_npoints')
 
 
-def run_test_st_geometrytype(spark):
+def run_test_st_geometrytype(spark, df):
     data = "geometrytype.csv"
     data = 'single.csv'
     table_name = 'test_gt'
     sql = "select st_geometrytype(geos) as geos from test_gt"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_geometrytype')
@@ -598,56 +598,56 @@ def run_test_st_geometrytype_curve(spark):
     execute_sql(spark, sql, 'run_test_st_geometrytype_curve')
 
 
-def run_test_st_transform(spark):
+def run_test_st_transform(spark, df):
     data = "transform.csv"
     data = 'single.csv'
     table_name = 'test_transform'
     sql = "select st_transform(geos, 'epsg:4326', 'epsg:3857') as geos from test_transform"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_transform')
 
 
-def run_test_st_transform1(spark):
+def run_test_st_transform1(spark, df):
     data = "transform.csv"
     table_name = 'test_transform1'
     sql = "select st_transform(geos, 'epsg:3857', 'epsg:4326') as geos from test_transform1"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_transform1')
 
 
-def run_test_st_precisionreduce(spark):
+def run_test_st_precisionreduce(spark, df):
     data = "precisionreduce.csv"
     data = 'single.csv'
     table_name = 'test_precisionreduce'
     sql = "select st_precisionreduce(geos,4) as geos from test_precisionreduce"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_precisionreduce')
 
 
-def run_test_st_intersects(spark):
+def run_test_st_intersects(spark, df):
     data = "intersects.csv"
     data = "double.csv"
     table_name = 'test_intersects'
     sql = "select st_intersects(left, right) as geos from test_intersects"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_intersects')
@@ -666,15 +666,15 @@ def run_test_st_intersects_curve(spark):
     execute_sql(spark, sql, 'run_test_st_intersects_curve')
 
 
-def run_test_st_contains(spark):
+def run_test_st_contains(spark, df):
     data = "contains.csv"
     data = "double.csv"
     table_name = 'test_contains'
     sql = "select st_contains(left, right) as geos from test_contains"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_contains')
@@ -693,15 +693,15 @@ def run_test_st_contains_curve(spark):
     execute_sql(spark, sql, 'run_test_st_contains_curve')
 
 
-def run_test_st_within(spark):
+def run_test_st_within(spark, df):
     data = "within.csv"
     data = "double.csv"
     table_name = 'test_within'
     sql = "select st_within(left, right) as geos from test_within"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_within')
@@ -720,15 +720,15 @@ def run_test_st_within_curve(spark):
     execute_sql(spark, sql, 'run_test_st_within_curve')
 
 
-def run_test_st_equals_1(spark):
+def run_test_st_equals_1(spark, df):
     data = "equals.csv"
     data = "double.csv"
     table_name = 'test_equals'
     sql = "select st_equals(left, right) as geos from test_equals"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_equals_1')
@@ -747,15 +747,15 @@ def run_test_st_equals_2(spark):
     execute_sql(spark, sql, 'run_test_st_equals_2')
 
 
-def run_test_st_crosses(spark):
+def run_test_st_crosses(spark, df):
     data = "crosses.csv"
     data = "double.csv"
     table_name = 'test_crosses'
     sql = "select st_crosses(left, right) as geos from test_crosses"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_crosses')
@@ -774,15 +774,15 @@ def run_test_st_crosses_curve(spark):
     execute_sql(spark, sql, 'run_test_st_crosses_curve')
 
 
-def run_test_st_overlaps(spark):
+def run_test_st_overlaps(spark, df):
     data = "overlaps.csv"
     data = "double.csv"
     table_name = 'test_overlaps'
     sql = "select st_overlaps(left, right) as geos from test_overlaps"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_overlaps')
@@ -801,15 +801,15 @@ def run_test_st_overlaps_curve(spark):
     execute_sql(spark, sql, 'run_test_st_overlaps_curve')
 
 
-def run_test_st_touches(spark):
+def run_test_st_touches(spark, df):
     data = "touches.csv"
     data = "double.csv"
     table_name = 'test_touches'
     sql = "select st_touches(left, right) as geos from test_touches"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_touches')
@@ -828,15 +828,15 @@ def run_test_st_touches_curve(spark):
     execute_sql(spark, sql, 'run_test_st_touches_curve')
 
 
-def run_test_st_makevalid(spark):
+def run_test_st_makevalid(spark, df):
     data = "makevalid.csv"
     data = 'single.csv'
     table_name = 'test_makevalid'
     sql = "select st_makevalid(geos) as geos from test_makevalid"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     rs, _ = execute_sql(spark, sql, 'run_test_st_makevalid')
@@ -857,15 +857,15 @@ def run_test_st_polygonfromenvelope(spark):
     execute_sql(spark, sql, 'run_test_st_polygonfromenvelope')
 
 
-def run_test_st_simplifypreservetopology(spark):
+def run_test_st_simplifypreservetopology(spark, df):
     data = "simplifypreservetopology.csv"
     data = 'single.csv'
     table_name = 'test_simplifypreservetopology'
     sql = "select st_simplifypreservetopology(geos, 1) as geos from test_simplifypreservetopology"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_simplifypreservetopology')
@@ -925,15 +925,15 @@ def run_test_st_geomfromgeojson2(spark):
     execute_sql(spark, sql, 'run_test_st_geomfromgeojson2')
 
 
-def run_test_st_hausdorffdistance(spark):
+def run_test_st_hausdorffdistance(spark, df):
     data = "hausdorffdistance.csv"
     data = "double.csv"
     table_name = 'test_hausdorffdistance'
     sql = "select st_hausdorffdistance(left,right) as geos from test_hausdorffdistance"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_hausdorffdistance')
@@ -991,46 +991,51 @@ def run_test_st_linestringfromtext(spark):
     execute_sql(spark, sql, 'run_test_st_linestringfromtext')
 
 
-def run_test_st_geomfromtext(spark):
+def run_test_st_geomfromtext(spark, df):
     data = "geomfromtext.csv"
     data = 'single.csv'
     table_name = 'test_geomfromtext'
     sql = "select st_geomfromtext(geos) as geos from test_geomfromtext"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_geomfromtext')
 
 
-def run_test_st_geomfromwkt(spark):
+def run_test_st_geomfromwkt(spark, df):
     data = "geomfromtext.csv"
     data = 'single.csv'
     table_name = 'test_geomfromwkt'
     sql = "select st_geomfromwkt(geos) as geos from test_geomfromwkt"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_geomfromwkt')
 
 
-def run_test_st_astext(spark):
+def run_test_st_astext(spark, df):
     data = "geomfromtext.csv"
     data = 'single.csv'
     table_name = 'test_astext'
     sql = "select st_astext(geos) as geos from test_astext"
 
-    df = read_data(spark, base_dir, data)
-    df.printSchema()
-    df.show()
+    # df = read_data(spark, base_dir, data)
+    # df.printSchema()
+    # df.show()
     df.createOrReplaceTempView(table_name)
 
     execute_sql(spark, sql, 'run_test_st_astext')
+
+
+def gen_df(spark, base_dir, data):
+    df = read_data(spark, base_dir, data)
+    return df
 
 
 if __name__ == "__main__":
@@ -1046,74 +1051,78 @@ if __name__ == "__main__":
     # run_test_st_isvalid_1(spark_session)
     # run_test_st_makevalid(spark_session)
 
+    df_single = gen_df(spark_session, base_dir, 'single.csv')
+    df_double = gen_df(spark_session, base_dir, 'double.csv')
+
     for _ in range(int(sys.argv[1])):
         run_test_st_geomfromgeojson(spark_session)
         run_test_st_geomfromgeojson2(spark_session)
-        # run_test_st_curvetoline(spark_session)
-        # run_test_st_point(spark_session)
-        # # run_test_envelope_aggr_1(spark_session)
-        # # run_test_envelope_aggr_curve(spark_session)
-        # # run_test_envelope_aggr_2(spark_session)
-        # # run_test_union_aggr_2(spark_session)
-        # # run_test_union_aggr_curve(spark_session)
-        # run_test_st_isvalid_1(spark_session)
-        # run_test_st_isvalid_curve(spark_session)
-        # run_test_st_intersection(spark_session)
-        # run_test_st_intersection_curve(spark_session)
-        # run_test_st_convexhull(spark_session)
-        # run_test_st_convexhull_curve(spark_session)
-        # run_test_st_buffer(spark_session)
-        # # run_test_st_buffer1(spark_session)
-        # # run_test_st_buffer2(spark_session)
-        # # run_test_st_buffer3(spark_session)
-        # # run_test_st_buffer4(spark_session)
-        # # run_test_st_buffer5(spark_session)
-        # # run_test_st_buffer6(spark_session)
-        # run_test_st_buffer_curve(spark_session)
-        # run_test_st_buffer_curve1(spark_session)
-        # run_test_st_envelope(spark_session)
-        # run_test_st_envelope_curve(spark_session)
-        # run_test_st_centroid(spark_session)
-        # run_test_st_centroid_curve(spark_session)
-        # run_test_st_length(spark_session)
-        # run_test_st_length_curve(spark_session)
-        # run_test_st_area(spark_session)
-        # run_test_st_area_curve(spark_session)
-        # run_test_st_distance(spark_session)
-        # run_test_st_distance_curve(spark_session)
-        # run_test_st_issimple(spark_session)
-        # run_test_st_issimple_curve(spark_session)
-        # run_test_st_npoints(spark_session)
-        # run_test_st_geometrytype(spark_session)
-        # run_test_st_geometrytype_curve(spark_session)
-        # # run_test_st_transform(spark_session)
-        # # run_test_st_transform1(spark_session)
-        # run_test_st_intersects(spark_session)
-        # run_test_st_intersects_curve(spark_session)
-        # run_test_st_contains(spark_session)
-        # run_test_st_contains_curve(spark_session)
-        # run_test_st_within(spark_session)
-        # run_test_st_within_curve(spark_session)
-        # run_test_st_equals_1(spark_session)
-        # run_test_st_equals_2(spark_session)
-        # run_test_st_crosses(spark_session)
-        # run_test_st_crosses_curve(spark_session)
-        # run_test_st_overlaps(spark_session)
-        # run_test_st_overlaps_curve(spark_session)
-        # run_test_st_touches(spark_session)
-        # run_test_st_touches_curve(spark_session)
-        # run_test_st_makevalid(spark_session)
-        # run_test_st_precisionreduce(spark_session)
-        # run_test_st_polygonfromenvelope(spark_session)
-        # run_test_st_simplifypreservetopology(spark_session)
-        # run_test_st_simplifypreservetopology_curve(spark_session)
-        # run_test_st_hausdorffdistance(spark_session)
-        # run_test_st_hausdorffdistance_curve(spark_session)
-        # run_test_st_pointfromtext(spark_session)
-        # run_test_st_polygonfromtext(spark_session)
-        # run_test_st_linestringfromtext(spark_session)
-        # run_test_st_geomfromtext(spark_session)
-        # run_test_st_geomfromwkt(spark_session)
-        # run_test_st_astext(spark_session)
+        run_test_st_curvetoline(spark_session)
+        run_test_st_point(spark_session)
+        # run_test_envelope_aggr_1(spark_session)
+        # run_test_envelope_aggr_curve(spark_session)
+        # run_test_envelope_aggr_2(spark_session)
+        # run_test_union_aggr_2(spark_session)
+        # run_test_union_aggr_curve(spark_session)
+        run_test_st_isvalid_1(spark_session, df_single)
+        run_test_st_isvalid_curve(spark_session)
+        run_test_st_intersection(spark_session, df_double)
+        run_test_st_intersection_curve(spark_session)
+        run_test_st_convexhull(spark_session, df_single)
+        run_test_st_convexhull_curve(spark_session)
+        run_test_st_buffer(spark_session, df_single)
+        run_test_st_buffer1(spark_session)
+        run_test_st_buffer2(spark_session)
+        run_test_st_buffer3(spark_session)
+        run_test_st_buffer4(spark_session)
+        run_test_st_buffer5(spark_session)
+        run_test_st_buffer6(spark_session)
+        run_test_st_buffer_curve(spark_session)
+        run_test_st_buffer_curve1(spark_session)
+        run_test_st_envelope(spark_session, df_single)
+        run_test_st_envelope_curve(spark_session)
+        run_test_st_centroid(spark_session, df_single)
+        run_test_st_centroid_curve(spark_session)
+        run_test_st_length(spark_session, df_single)
+        run_test_st_length_curve(spark_session)
+        run_test_st_area(spark_session, df_single)
+        run_test_st_area_curve(spark_session)
+        run_test_st_distance(spark_session, df_double)
+        run_test_st_distance_curve(spark_session)
+        run_test_st_issimple(spark_session, df_single)
+        run_test_st_issimple_curve(spark_session)
+        run_test_st_npoints(spark_session, df_single)
+        run_test_st_geometrytype(spark_session, df_single)
+        run_test_st_geometrytype_curve(spark_session)
+        # run_test_st_transform(spark_session)
+        # run_test_st_transform1(spark_session)
+        run_test_st_intersects(spark_session, df_double)
+        run_test_st_intersects_curve(spark_session)
+        run_test_st_contains(spark_session, df_double)
+        run_test_st_contains_curve(spark_session)
+        run_test_st_within(spark_session, df_double)
+        run_test_st_within_curve(spark_session)
+        run_test_st_equals_1(spark_session, df_double)
+        run_test_st_equals_2(spark_session)
+        run_test_st_crosses(spark_session, df_double)
+        run_test_st_crosses_curve(spark_session)
+        run_test_st_overlaps(spark_session, df_double)
+        run_test_st_overlaps_curve(spark_session)
+        run_test_st_touches(spark_session, df_double)
+        run_test_st_touches_curve(spark_session)
+        run_test_st_makevalid(spark_session, df_single)
+        run_test_st_precisionreduce(spark_session, df_single)
+        run_test_st_polygonfromenvelope(spark_session)
+        run_test_st_simplifypreservetopology(spark_session, df_single)
+        run_test_st_simplifypreservetopology_curve(spark_session)
+        run_test_st_hausdorffdistance(spark_session, df_double)
+        run_test_st_hausdorffdistance_curve(spark_session)
+        run_test_st_pointfromtext(spark_session)
+        run_test_st_polygonfromtext(spark_session)
+        run_test_st_linestringfromtext(spark_session)
+        run_test_st_geomfromtext(spark_session, df_single)
+        run_test_st_geomfromwkt(spark_session, df_single)
+        run_test_st_astext(spark_session, df_single)
 
     spark_session.stop()
+
